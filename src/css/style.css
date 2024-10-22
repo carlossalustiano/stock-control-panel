@@ -1,121 +1,253 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
 main {
-    height: 100%;
-    padding: 20px;
-    background-color: #333333;
-    display: flex;
-    flex-direction: row;
+  height: 100%;
+  padding: 20px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
 }
 
 #menu-esquerdo {
-    width: 320px;
-    height: 100%;
-    padding: 10px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-right: 1px solid #ffffffbb;
-    background-color: #151515;
+  width: 320px;
+  height: 100%;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid #ffffffbb;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  #header {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 18px;
 
-    #header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-
-        h1 {
-            margin-top: 12px;
-            text-align: center;
-            color: #fff;
-            font-size: 2em;
-            letter-spacing: .7px;
-        }
-
-        button {
-            width: 280px;
-            height: 35px;
-            border: 0;
-            background-color: #87df5b;
-            color: #fff;
-            font-weight: 600;
-            font-size: 1em;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-
+    h1 {
+      margin-top: 12px;
+      text-align: center;
+      color: #fff;
+      font-size: 2em;
+      letter-spacing: 0.7px;
     }
 
+    button {
+      width: 215px;
+      height: 35px;
+      border: 0;
+      background-color: #64B5F6;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1em;
+      letter-spacing: .5px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
 }
 
 #box-title-list {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    h2 {
-        color: #fff;
-        font-size: .9em;
-        letter-spacing: .7px;
-        text-transform: uppercase;
-    }
+  h2 {
+    color: #fff;
+    font-size: 0.9em;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
 
-    span {
-        color: #fff;
-        font-size: .9em;
-        cursor: pointer;
-    }
+  span {
+    color: #fff;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .box-link {
+    width: 270px;
+    height: 32px;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
 
-    .box-link {
-        width: 270px;
-        height: 32px;
-        padding: 10px;
-        margin: auto;
-        cursor: pointer;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 7px;
-    
-        a {
-            text-decoration: none;
-            color: #fff;
-            display: block;
-        }
-        
-        span {
-            color: #fff;
-        }
-
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
     }
+
+    span {
+      color: #fff;
+    }
+  }
 }
 
-#container-main{
-    width: calc(100% - 320px);
-    height: 100%;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    background-color: #151515;
+#container-main {
+  width: calc(100% - 320px);
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  
+  #container-information {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 50px;
+  }
+
+  .box-information {
+    width: 290px;
+    height: 145px;
+    padding: 5px;
+    margin-top: 45px;
+    background-color: #333333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    h1 {
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    #text-white {
+      color: #fff;
+    }
+  
+    #text-blue {
+        color: #76C7FF;
+    }
+
+  }
+
+  #container-itens {
+    width: 90%;
+    height: 400px;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    #header-stock {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            color: #fff;
+            font-size: 1.7em;
+        }
+
+        button {
+            width: 100px;
+            height: 35px;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            background-color: #388E3C;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            font-size: .7em;
+            cursor: pointer;
+        }
+    }
+  }
+
+  #container-stock {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+    #box-stock {
+        display: flex;
+        flex-direction: row;
+
+        .stock-data {
+            width: 95px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            
+            h1 {
+                color: #fff;
+                font-size: 1em;
+            }
+    
+            p {
+                color: #fff;
+                font-size: .8em;
+            }
+        }
+    }
+
+    #buttons {
+        display: flex;
+        gap: 15px;
+
+        .button-itens {
+            width: 100px;
+            height: 35px;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            font-size: .7em;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #button-remove {
+            background-color: #D32F2F;
+        }
+
+        #button-edit {
+            background-color: #F57C00;
+        }
+    }
+  }
+
 }
