@@ -13,24 +13,33 @@
       <!-- Lado esquerdo -->
       <div id="menu-esquerdo">
         <div id="header">
-          <h1>Inventory control</h1>
-          <button>Sign in</button>
-        </div>
-        <div>
-          <div id="box-title-list">
-            <h2>Menu</h2>
-            <span class="material-symbols-outlined">keyboard_control_key</span>
+          <h1>inventory control</h1>
+          <div id="box-input">
+            <span class="material-symbols-outlined">search</span>
+            <input type="search" name="search" id="search" placeholder="Search product">
           </div>
-          <ul>
-            <div class="box-link">
-              <span class="material-symbols-outlined">article</span>
-              <li><a href="#">Documentation</a></li>
+        </div>
+        <div id="box-sinalizacoes">
+          <div>
+            <div id="box-title-list">
+              <h2>Menu</h2>
+              <span class="material-symbols-outlined">keyboard_control_key</span>
             </div>
-            <div class="box-link">
-              <span class="material-symbols-outlined">contact_support</span>
-              <li><a href="#">Contact us</a></li>
-            </div>
-          </ul>
+            <ul>
+              <div class="box-link">
+                <span class="material-symbols-outlined">article</span>
+                <li><a href="#">Documentation</a></li>
+              </div>
+              <div class="box-link">
+                <span class="material-symbols-outlined">contact_support</span>
+                <li><a href="#">Contact us</a></li>
+              </div>
+            </ul>
+          </div>
+          <div id="box-user">
+            <span class="material-symbols-outlined">account_circle</span>
+            <a href="#">Sign in</a>
+          </div>
         </div>
       </div>
       <!-- Lado Direito -->
@@ -39,11 +48,11 @@
         <div id="container-information">
           <div class="box-information">
             <h1>Total products</h1>
-            <h2 id="text-white">8</h2>
+            <h2 id="text-black">10</h2>
           </div>
           <div class="box-information">
             <h1>Balance</h1>
-            <h2 id="text-blue">R$ 10.000,00</h2>
+            <h2 id="text-blue">R$ 6.040,00</h2>
           </div>
         </div>
 
@@ -72,6 +81,34 @@
               <div class="stock-data">
                 <h1>Total value</h1>
                 <p>R$ 5.120,00</p>
+              </div>
+            </div>
+
+            <div id="buttons">
+              <button class="button-itens" id="button-edit">Edit</button>
+              <button class="button-itens" id="button-remove">Remove</button>
+            </div>
+
+          </div>
+
+          <div id="container-stock">
+
+            <div id="box-stock">
+              <div class="stock-data">
+                <h1>Name</h1>
+                <p>Redmi 12</p>
+              </div>
+              <div class="stock-data">
+                <h1>Quantity</h1>
+                <p>2</p>
+              </div>
+              <div class="stock-data">
+                <h1>Unit value</h1>
+                <p>R$ 460,00</p>
+              </div>
+              <div class="stock-data">
+                <h1>Total value</h1>
+                <p>R$ 920,00</p>
               </div>
             </div>
 
