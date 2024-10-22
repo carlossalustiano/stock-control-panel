@@ -14,10 +14,6 @@
       <div id="menu-esquerdo">
         <div id="header">
           <h1>inventory control</h1>
-          <div id="box-input">
-            <span class="material-symbols-outlined">search</span>
-            <input type="search" name="search" id="search" placeholder="Search product">
-          </div>
         </div>
         <div id="box-sinalizacoes">
           <div>
@@ -29,6 +25,10 @@
               <div class="box-link">
                 <span class="material-symbols-outlined">article</span>
                 <li><a href="#">Documentation</a></li>
+              </div>
+              <div class="box-link">
+                <span class="material-symbols-outlined">accessibility_new</span>
+                <li><a href="#">Accessibility</a></li>
               </div>
               <div class="box-link">
                 <span class="material-symbols-outlined">contact_support</span>
@@ -59,8 +59,14 @@
         <div id="container-itens">
 
           <div id="header-stock">
-            <h1>Latest releases</h1>
-            <button>Add product</button>
+            <div>
+              <h1>Latest releases</h1>
+              <div id="box-input">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" name="search" id="search" placeholder="Search product">
+              </div>
+            </div>
+            <span class="material-symbols-outlined" id="button-add">add</span>
           </div>
 
           <div id="container-stock">
@@ -85,8 +91,8 @@
             </div>
 
             <div id="buttons">
-              <button class="button-itens" id="button-edit">Edit</button>
-              <button class="button-itens" id="button-remove">Remove</button>
+              <span class="material-symbols-outlined" id="button-edit">edit_note</span>
+              <span class="material-symbols-outlined" id="button-remove">delete</span>
             </div>
 
           </div>
@@ -113,8 +119,8 @@
             </div>
 
             <div id="buttons">
-              <button class="button-itens" id="button-edit">Edit</button>
-              <button class="button-itens" id="button-remove">Remove</button>
+              <span class="material-symbols-outlined" id="button-edit">edit_note</span>
+              <span class="material-symbols-outlined" id="button-remove">delete</span>
             </div>
 
           </div>

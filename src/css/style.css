@@ -42,41 +42,13 @@ main {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 15px;
 
   #header {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
-    #box-input {
-      width: 265px;
-      height: 35px;
-      border: 1px solid black;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-
-      input {
-        width: 100%;
-        height: 100%;
-        outline: 0;
-        border: 0;
-        cursor: pointer;
-      }
-
-      input::placeholder {
-        font-size: 1em;
-        color: #151515df;
-        letter-spacing: 0.2px;
-      }
-
-      span {
-        padding: 5px;
-        cursor: pointer;
-      }
-    }
 
     h1 {
       margin-top: 12px;
@@ -91,7 +63,7 @@ main {
 
   #box-sinalizacoes {
     width: 100%;
-    height: 80%;
+    height: 90%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -124,7 +96,7 @@ main {
 }
 
 #box-title-list {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -190,12 +162,12 @@ ul {
   }
 
   .box-information {
-    width: 280px;
+    width: 480px;
     height: 140px;
     padding: 5px;
     margin-top: 45px;
     background-color: #faf3e0;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +192,7 @@ ul {
     height: 400px;
     padding: 20px;
     background-color: #faf3e0;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -229,24 +201,22 @@ ul {
       display: flex;
       justify-content: space-between;
 
+      div {
+        display: flex;
+        gap: 20px;
+      }
+
       h1 {
         color: black;
         font-size: 1.6em;
       }
-
-      button {
-        width: 110px;
-        height: 40px;
-        padding: 10px;
-        border-radius: 20px;
-        border: none;
-        background-color: #4acc50;
-        color: #fff;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-size: 0.7em;
+      
+      #button-add {
+        margin-right: 13px;
+        color: #4acc50;
+        font-size: 1.7em;
         cursor: pointer;
+
       }
     }
   }
@@ -286,29 +256,49 @@ ul {
 
     #buttons {
       display: flex;
-      gap: 15px;
+      align-items: center;
+      gap: 20px;
 
-      .button-itens {
-        width: 110px;
-        height: 40px;
-        padding: 10px;
-        border-radius: 20px;
-        border: none;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-size: 0.7em;
-        color: #fff;
+      #button-remove {
+        font-size: 1.7em;
+        color: #e03c3c;
         cursor: pointer;
       }
 
-      #button-remove {
-        background-color: #e03c3c;
-      }
-
       #button-edit {
-        background-color: #ef8822;
+        font-size: 1.7em;
+        color: #ef8822;
+        cursor: pointer;
       }
     }
+  }
+}
+
+#box-input {
+  width: 265px;
+  height: 35px;
+  border: 1px solid black;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+  }
+
+  input::placeholder {
+    font-size: 1em;
+    color: #151515df;
+    letter-spacing: 0.2px;
+  }
+
+  span {
+    padding: 5px;
+    cursor: pointer;
   }
 }
