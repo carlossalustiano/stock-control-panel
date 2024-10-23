@@ -2,16 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/*
-#fff Branco minimalista (principal)
-#151515 (preto suave)
-#333333 (cinza escuro)
-#388e3c (verde)
-#64b5f6 (azul claro)
-#76c7ff (azul mais claro)
-#d32f2f (vermelho)
-#f57c00 (laranja)
-*/
+:root {
+  -cor1: #000000;
+  -cor2: #010b09;
+  -cor3: #021612;
+  -cor4: #03201b;
+  -cor5: #042b24;
+}
 
 * {
   margin: 0;
@@ -67,7 +64,9 @@ main {
     flex-direction: column;
 
     #box-user {
-      width: 100px;
+      width: 95%;
+      padding-top: 14px;
+      border-top: 1px solid #9a9a9a;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -76,7 +75,7 @@ main {
         font-size: 1em;
         text-decoration: none;
         font-weight: 500;
-        letter-spacing: .2px;
+        letter-spacing: 0.2px;
         color: black;
         cursor: pointer;
       }
@@ -157,7 +156,7 @@ ul {
   }
 
   .box-information {
-    width: 480px;
+    width: 492px;
     height: 140px;
     padding: 5px;
     margin-top: 45px;
@@ -205,13 +204,12 @@ ul {
         color: black;
         font-size: 1.6em;
       }
-      
+
       #button-add {
         margin-right: 13px;
         color: #4acc50;
         font-size: 1.7em;
         cursor: pointer;
-
       }
     }
   }
@@ -219,7 +217,7 @@ ul {
   #container-stock {
     width: 100%;
     padding: 12px;
-    border: .5px solid rgba(0, 0, 0, 0.407);
+    border: 0.5px solid rgba(0, 0, 0, 0.407);
     border-radius: 20px;
     display: flex;
     flex-direction: row;
