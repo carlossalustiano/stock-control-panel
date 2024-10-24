@@ -13,7 +13,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="shortcut icon" href="src/img/stock-exchange.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="src/img/stock-exchange.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <main>
@@ -49,7 +54,7 @@
         <header id="container-information">
           <div class="box-information">
             <h1>Total de Produtos</h1>
-            <h2 id="text-black">10</h2>
+            <h2 id="text-black" class="h2Quantidade"></h2>
           </div>
           <div class="box-information">
             <h1>Saldo</h1>
@@ -70,55 +75,10 @@
             </div>
             <span class="material-icons" id="button-add">add</span>
           </header>
-          <div id="container-stock">
-            <article class="box-stock">
-              <div class="stock-data">
-                <h1>Nome</h1>
-                <p>Iphone 6s</p>
-              </div>
-              <div class="stock-data">
-                <h1>Quantidade</h1>
-                <p>8</p>
-              </div>
-              <div class="stock-data">
-                <h1>Valor Unitário</h1>
-                <p>R$ 640,00</p>
-              </div>
-              <div class="stock-data">
-                <h1>Valor Total</h1>
-                <p>R$ 5.120,00</p>
-              </div>
-              <div class="buttons">
-                <span class="material-icons button-edit">edit_note</span>
-                <span class="material-icons button-remove">delete</span>
-              </div>
-            </article>
-            <article class="box-stock">
-              <div class="stock-data">
-                <h1>Nome</h1>
-                <p>Redmi 12</p>
-              </div>
-              <div class="stock-data">
-                <h1>Quantidade</h1>
-                <p>2</p>
-              </div>
-              <div class="stock-data">
-                <h1>Valor Unitário</h1>
-                <p>R$ 460,00</p>
-              </div>
-              <div class="stock-data">
-                <h1>Valor Total</h1>
-                <p>R$ 920,00</p>
-              </div>
-              <div class="buttons">
-                <span class="material-icons button-edit">edit_note</span>
-                <span class="material-icons button-remove">delete</span>
-              </div>
-            </article>
-          </div>
+          <div id="container-stock"></div>
         </div>
       </section>
     </main>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/main.js" type="module"></script>
   </body>
 </html>

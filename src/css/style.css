@@ -187,6 +187,9 @@ input::placeholder {
 
 #container-stock {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .box-stock {
@@ -196,12 +199,12 @@ input::placeholder {
   padding: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin-bottom: 10px;
 }
 
 .stock-data {
   display: flex;
   flex-direction: column;
+  flex: 1;
   color: var(--cor-texto);
 }
 
