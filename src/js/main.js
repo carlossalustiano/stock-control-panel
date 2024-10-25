@@ -11,8 +11,18 @@ async function getProdutos() {
     produtos = response.data;
     totalProdutos(produtos);
     totalSaldo(produtos);
-    mostrarProdutos(produtos);
     filtrarProdutos(produtos);
+    mostrarProdutos(produtos);
+  } catch (error) {
+    console.log("Error no servidor, tente novamente.");
+  }
+}
+
+async function deleteProdutos(name) {
+  try {
+    await api.delete(`/produtos/${name}`);
+    containerEstoque.innerHTML = "";
+    getProdutos();
   } catch (error) {
     console.log("Error no servidor, tente novamente.");
   }
@@ -75,6 +85,9 @@ function criarCaixaProduto(produto) {
   article.appendChild(divBotoes);
 
   containerEstoque.appendChild(article);
+
+  let buttonRemove = divBotoes.querySelector(".button-remove");
+  buttonRemove.addEventListener("click", () => deleteProdutos(produto.name));
 }
 
 function criarElemento(produto) {
