@@ -150,10 +150,13 @@ function filtrarProdutos(produtos) {
           elemento = criarElemento(produto);
           containerEstoque.appendChild(elemento);
         }
+        let buttonRemove = document.querySelector(".button-remove");
+        buttonRemove.addEventListener("click", (event) => deleteProdutos(produto.name));
       });
       input.value = "";
     }
   });
+
 
   buttonVoltar.addEventListener("click", (event) => {
     buttonVoltar.style.display = "none";
